@@ -1,0 +1,15 @@
+/home/pengju/15-463/final_proj/external/aruco-1.3.0/build/src/CMakeFiles/aruco.dir
+/home/pengju/15-463/final_proj/external/aruco-1.3.0/build/utils/CMakeFiles/aruco_board_pix2meters.dir
+/home/pengju/15-463/final_proj/external/aruco-1.3.0/build/utils/CMakeFiles/aruco_calibration.dir
+/home/pengju/15-463/final_proj/external/aruco-1.3.0/build/utils/CMakeFiles/aruco_create_board.dir
+/home/pengju/15-463/final_proj/external/aruco-1.3.0/build/utils/CMakeFiles/aruco_create_marker.dir
+/home/pengju/15-463/final_proj/external/aruco-1.3.0/build/utils_hrm/CMakeFiles/aruco_hrm_create_board.dir
+/home/pengju/15-463/final_proj/external/aruco-1.3.0/build/utils_hrm/CMakeFiles/aruco_hrm_create_dictionary.dir
+/home/pengju/15-463/final_proj/external/aruco-1.3.0/build/utils_hrm/CMakeFiles/aruco_hrm_test.dir
+/home/pengju/15-463/final_proj/external/aruco-1.3.0/build/utils_hrm/CMakeFiles/aruco_hrm_test_board.dir
+/home/pengju/15-463/final_proj/external/aruco-1.3.0/build/utils/CMakeFiles/aruco_selectoptimalmarkers.dir
+/home/pengju/15-463/final_proj/external/aruco-1.3.0/build/utils/CMakeFiles/aruco_simple.dir
+/home/pengju/15-463/final_proj/external/aruco-1.3.0/build/utils/CMakeFiles/aruco_simple_board.dir
+/home/pengju/15-463/final_proj/external/aruco-1.3.0/build/utils/CMakeFiles/aruco_test.dir
+/home/pengju/15-463/final_proj/external/aruco-1.3.0/build/utils/CMakeFiles/aruco_test_board.dir
+/home/pengju/15-463/final_proj/external/aruco-1.3.0/build/CMakeFiles/uninstall.dir

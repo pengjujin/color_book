@@ -1,0 +1,1 @@
+/usr/bin/cc      CMakeFiles/cursor.dir/cursor.c.o  -o ../../../bin/cursor  -L/usr/local/lib -rdynamic ../src/libglfw3.a -lrt -lm -lX11 -lpthread -lXrandr -lXinerama -lXi -lXxf86vm -lXcursor -lGL -ldl -Wl,-rpath,/usr/local/lib 
