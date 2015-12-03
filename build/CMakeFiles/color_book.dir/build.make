@@ -187,6 +187,29 @@ CMakeFiles/color_book.dir/common/objloader.cpp.o.provides: CMakeFiles/color_book
 
 CMakeFiles/color_book.dir/common/objloader.cpp.o.provides.build: CMakeFiles/color_book.dir/common/objloader.cpp.o
 
+CMakeFiles/color_book.dir/src/texture_model_util.cpp.o: CMakeFiles/color_book.dir/flags.make
+CMakeFiles/color_book.dir/src/texture_model_util.cpp.o: ../src/texture_model_util.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/pengju/15-463/final_proj/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/color_book.dir/src/texture_model_util.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/color_book.dir/src/texture_model_util.cpp.o -c /home/pengju/15-463/final_proj/src/texture_model_util.cpp
+
+CMakeFiles/color_book.dir/src/texture_model_util.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/color_book.dir/src/texture_model_util.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/pengju/15-463/final_proj/src/texture_model_util.cpp > CMakeFiles/color_book.dir/src/texture_model_util.cpp.i
+
+CMakeFiles/color_book.dir/src/texture_model_util.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/color_book.dir/src/texture_model_util.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/pengju/15-463/final_proj/src/texture_model_util.cpp -o CMakeFiles/color_book.dir/src/texture_model_util.cpp.s
+
+CMakeFiles/color_book.dir/src/texture_model_util.cpp.o.requires:
+.PHONY : CMakeFiles/color_book.dir/src/texture_model_util.cpp.o.requires
+
+CMakeFiles/color_book.dir/src/texture_model_util.cpp.o.provides: CMakeFiles/color_book.dir/src/texture_model_util.cpp.o.requires
+	$(MAKE) -f CMakeFiles/color_book.dir/build.make CMakeFiles/color_book.dir/src/texture_model_util.cpp.o.provides.build
+.PHONY : CMakeFiles/color_book.dir/src/texture_model_util.cpp.o.provides
+
+CMakeFiles/color_book.dir/src/texture_model_util.cpp.o.provides.build: CMakeFiles/color_book.dir/src/texture_model_util.cpp.o
+
 # Object files for target color_book
 color_book_OBJECTS = \
 "CMakeFiles/color_book.dir/src/video_reader.cpp.o" \
@@ -194,7 +217,8 @@ color_book_OBJECTS = \
 "CMakeFiles/color_book.dir/common/shader.cpp.o" \
 "CMakeFiles/color_book.dir/common/controls.cpp.o" \
 "CMakeFiles/color_book.dir/common/texture.cpp.o" \
-"CMakeFiles/color_book.dir/common/objloader.cpp.o"
+"CMakeFiles/color_book.dir/common/objloader.cpp.o" \
+"CMakeFiles/color_book.dir/src/texture_model_util.cpp.o"
 
 # External object files for target color_book
 color_book_EXTERNAL_OBJECTS =
@@ -205,6 +229,7 @@ bin/color_book: CMakeFiles/color_book.dir/common/shader.cpp.o
 bin/color_book: CMakeFiles/color_book.dir/common/controls.cpp.o
 bin/color_book: CMakeFiles/color_book.dir/common/texture.cpp.o
 bin/color_book: CMakeFiles/color_book.dir/common/objloader.cpp.o
+bin/color_book: CMakeFiles/color_book.dir/src/texture_model_util.cpp.o
 bin/color_book: CMakeFiles/color_book.dir/build.make
 bin/color_book: /usr/lib/x86_64-linux-gnu/libGLU.so
 bin/color_book: /usr/lib/x86_64-linux-gnu/libGL.so
@@ -252,6 +277,7 @@ bin/color_book: /usr/local/lib/libopencv_superres.a
 bin/color_book: /usr/local/lib/libopencv_nonfree.a
 bin/color_book: /usr/local/lib/libopencv_stitching.a
 bin/color_book: /usr/local/lib/libopencv_contrib.a
+bin/color_book: ../external/soil/libSOIL.a
 bin/color_book: /usr/local/lib/libopencv_nonfree.a
 bin/color_book: /usr/local/lib/libopencv_gpu.a
 bin/color_book: /usr/local/lib/libopencv_legacy.a
@@ -311,6 +337,7 @@ CMakeFiles/color_book.dir/requires: CMakeFiles/color_book.dir/common/shader.cpp.
 CMakeFiles/color_book.dir/requires: CMakeFiles/color_book.dir/common/controls.cpp.o.requires
 CMakeFiles/color_book.dir/requires: CMakeFiles/color_book.dir/common/texture.cpp.o.requires
 CMakeFiles/color_book.dir/requires: CMakeFiles/color_book.dir/common/objloader.cpp.o.requires
+CMakeFiles/color_book.dir/requires: CMakeFiles/color_book.dir/src/texture_model_util.cpp.o.requires
 .PHONY : CMakeFiles/color_book.dir/requires
 
 CMakeFiles/color_book.dir/clean:

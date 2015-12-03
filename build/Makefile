@@ -763,6 +763,30 @@ src/gltest.cpp.s:
 	$(MAKE) -f CMakeFiles/gltest.dir/build.make CMakeFiles/gltest.dir/src/gltest.cpp.s
 .PHONY : src/gltest.cpp.s
 
+src/texture_model_util.o: src/texture_model_util.cpp.o
+.PHONY : src/texture_model_util.o
+
+# target to build an object file
+src/texture_model_util.cpp.o:
+	$(MAKE) -f CMakeFiles/color_book.dir/build.make CMakeFiles/color_book.dir/src/texture_model_util.cpp.o
+.PHONY : src/texture_model_util.cpp.o
+
+src/texture_model_util.i: src/texture_model_util.cpp.i
+.PHONY : src/texture_model_util.i
+
+# target to preprocess a source file
+src/texture_model_util.cpp.i:
+	$(MAKE) -f CMakeFiles/color_book.dir/build.make CMakeFiles/color_book.dir/src/texture_model_util.cpp.i
+.PHONY : src/texture_model_util.cpp.i
+
+src/texture_model_util.s: src/texture_model_util.cpp.s
+.PHONY : src/texture_model_util.s
+
+# target to generate assembly for a file
+src/texture_model_util.cpp.s:
+	$(MAKE) -f CMakeFiles/color_book.dir/build.make CMakeFiles/color_book.dir/src/texture_model_util.cpp.s
+.PHONY : src/texture_model_util.cpp.s
+
 src/tracker.o: src/tracker.cpp.o
 .PHONY : src/tracker.o
 
@@ -877,6 +901,9 @@ help:
 	@echo "... src/gltest.o"
 	@echo "... src/gltest.i"
 	@echo "... src/gltest.s"
+	@echo "... src/texture_model_util.o"
+	@echo "... src/texture_model_util.i"
+	@echo "... src/texture_model_util.s"
 	@echo "... src/tracker.o"
 	@echo "... src/tracker.i"
 	@echo "... src/tracker.s"

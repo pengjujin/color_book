@@ -22,6 +22,7 @@ SET(CMAKE_C_TARGET_INCLUDE_PATH
   "../external/glew-1.13.0/include"
   "../external/assimp-3.0.1270/include"
   "../external/bullet-2.81-rev2613/src"
+  "../external/soil/src"
   "../."
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

@@ -35,32 +35,26 @@ using namespace cv;
 using namespace aruco;
 int main(int argc,char **argv)
 {
-    try
-    {
-        if (argc!=2) {
-            cerr<<"Usage: in.jpg "<<endl;
-            return -1;
-        }
         MarkerDetector MDetector;
         vector<Marker> Markers;
         //read the input image
         cv::Mat intrinsics = (Mat_<double>(3,3) << 622.9, 0, 341.53, 0, 624.08, 259.9, 0, 0, 1);
         cv::Mat InImage;
-        InImage=cv::imread(argv[1]);
-    	//Ok, let's detect
-        MDetector.detect(InImage,Markers, intrinsics, Mat(), 0.034);
-        //for each marker, draw info and its boundaries in the image
-         cout << Markers.size() << endl;
-	for (unsigned int i=0;i<Markers.size();i++) {
-            cout<<Markers[i]<<endl;
-            Markers[i].draw(InImage,Scalar(0,0,255),2);
-        }
-        cv::imshow("in",InImage);
-        cv::waitKey(0);//wait for key to be pressed
-    } catch (std::exception &ex)
-    {
-        cout<<"Exception :"<<ex.what()<<endl;
-    }
+        VideoCapture cap(1);
+        while(true){
+            cap >> InImage;
+        	//Ok, let's detect
+            MDetector.detect(InImage,Markers, intrinsics, Mat(), 0.034);
+            //for each marker, draw info and its boundaries in the image
+             cout << Markers.size() << endl;
+        	for (unsigned int i=0;i<Markers.size();i++) {
+                    cout<<Markers[i]<<endl;
+                    Markers[i].draw(InImage,Scalar(0,0,255),2);
+                }
+                cv::imshow("in",InImage);
+                cv::waitKey(1);//wait for key to be pressed
+            }
+
 }
 
 

@@ -16,7 +16,6 @@ tracker::tracker(Mat camera_intrinsics, float msize){
 bool tracker::track(Mat frame, Mat& extrinsics ){
 	vector<Marker> Markers;
 	MDetector.detect(frame, Markers, intrinsics, Mat(), markerSize);
-
 	/*DEBUG
 	for (int i = 0; i < Markers.size(); i++){
 		Markers[i].draw(frame, Scalar(0,0,255), 2);
@@ -30,15 +29,16 @@ bool tracker::track(Mat frame, Mat& extrinsics ){
 		//Getting extrinsics
 		cv::Mat rotationMatrix(3,3, CV_64F);
 		Rodrigues(fmark.Rvec, rotationMatrix);
-		cv::Mat T(4, 4, CV_64F);
-		//cout << "rotation mat: " << rotationMatrix << endl;
-		T(cv::Range(0,3), cv::Range(0,3)) = rotationMatrix * 1;
-		T(cv::Range(0,3), cv::Range(3,4)) = fmark.Tvec * 1;
-		T.at<double>(3, 0) = 0;
-		T.at<double>(3, 1) = 0;
-		T.at<double>(3, 2) = 0;
-		T.at<double>(3, 3) = 1;
-		extrinsics = T;
+		
+		for(int i = 0; i < 3; i++){
+			for(int j = 0; j < 3; j++){
+				extrinsics.at<double>(i,j) = rotationMatrix.at<float>(i,j);
+			}
+		}
+
+		extrinsics.at<double>(0, 3) = fmark.Tvec.at<float>(0,0);
+		extrinsics.at<double>(1, 3) = fmark.Tvec.at<float>(1,0);
+		extrinsics.at<double>(2, 3) = fmark.Tvec.at<float>(2,0);
 		return true;
 	}
 	extrinsics = Mat();

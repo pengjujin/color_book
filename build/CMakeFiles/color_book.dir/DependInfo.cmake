@@ -8,6 +8,7 @@ SET(CMAKE_DEPENDS_CHECK_CXX
   "/home/pengju/15-463/final_proj/common/objloader.cpp" "/home/pengju/15-463/final_proj/build/CMakeFiles/color_book.dir/common/objloader.cpp.o"
   "/home/pengju/15-463/final_proj/common/shader.cpp" "/home/pengju/15-463/final_proj/build/CMakeFiles/color_book.dir/common/shader.cpp.o"
   "/home/pengju/15-463/final_proj/common/texture.cpp" "/home/pengju/15-463/final_proj/build/CMakeFiles/color_book.dir/common/texture.cpp.o"
+  "/home/pengju/15-463/final_proj/src/texture_model_util.cpp" "/home/pengju/15-463/final_proj/build/CMakeFiles/color_book.dir/src/texture_model_util.cpp.o"
   "/home/pengju/15-463/final_proj/src/tracker.cpp" "/home/pengju/15-463/final_proj/build/CMakeFiles/color_book.dir/src/tracker.cpp.o"
   "/home/pengju/15-463/final_proj/src/video_reader.cpp" "/home/pengju/15-463/final_proj/build/CMakeFiles/color_book.dir/src/video_reader.cpp.o"
   )
@@ -29,6 +30,7 @@ SET(CMAKE_C_TARGET_INCLUDE_PATH
   "../external/glew-1.13.0/include"
   "../external/assimp-3.0.1270/include"
   "../external/bullet-2.81-rev2613/src"
+  "../external/soil/src"
   "../."
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

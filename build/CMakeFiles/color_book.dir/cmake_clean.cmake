@@ -5,6 +5,7 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/color_book.dir/common/controls.cpp.o"
   "CMakeFiles/color_book.dir/common/texture.cpp.o"
   "CMakeFiles/color_book.dir/common/objloader.cpp.o"
+  "CMakeFiles/color_book.dir/src/texture_model_util.cpp.o"
   "bin/color_book.pdb"
   "bin/color_book"
 )
